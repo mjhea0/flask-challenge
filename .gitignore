@@ -1,0 +1,15 @@
+.env
+env
+venv
+__pycache__
+*.pyc
+*.sqlite
+*.coverage
+.DS_Store
+env.sh
+migrations
+challenge
+data_dev.json
+data_test.json
+stats_dev.json
+stats_test.json
