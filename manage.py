@@ -1,11 +1,11 @@
 # manage.py
 
 
-import os
 import unittest
 import coverage
 
 from flask_script import Manager
+
 
 COV = coverage.coverage(
     branch=True,

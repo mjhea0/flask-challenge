@@ -27,7 +27,7 @@ def validate_schema(f):
     def wrapper(*args, **kw):
         if not validate(request.json):
             return make_response(jsonify(
-                { 'status': '400', 'error': 'Invalid payload' } ), 400)
+                {'status': '400', 'error': 'Invalid payload'}), 400)
         return f(*args, **kw)
     return wrapper
 
@@ -38,6 +38,7 @@ def write_data(data):
     current.append(data)
     with open(app.config['DATA_FILE'], mode='w') as f:
         f.write(json.dumps(current, indent=2))
+
 
 def update_stats():
     with open(app.config['DATA_FILE']) as f:
@@ -59,6 +60,7 @@ def update_stats():
     with open(app.config['STATS_FILE'], mode='w') as f:
         f.write(json.dumps(current, indent=2))
 
+
 def get_stats(uuid):
     with open(app.config['STATS_FILE']) as f:
         if not uuid:
@@ -67,6 +69,7 @@ def get_stats(uuid):
             for stat in json.load(f):
                 if stat['uuid'] == uuid:
                     return stat
+
 
 def create_uuid():
     string = (base64.urlsafe_b64encode(uuid.uuid4().bytes)).decode('utf-8')

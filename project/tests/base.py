@@ -15,13 +15,13 @@ class BaseTestCase(TestCase):
         return app
 
     def setUp(self):
-        with open(app.config['DATA_FILE'], mode='w') as f:
-            f.write(json.dumps([], indent=2))
-        with open(app.config['STATS_FILE'], mode='w') as f:
-            f.write(json.dumps([], indent=2))
+        with open(app.config['DATA_FILE'], mode='w') as file:
+            file.write(json.dumps([], indent=2))
+        with open(app.config['STATS_FILE'], mode='w') as file:
+            file.write(json.dumps([], indent=2))
 
     def tearDown(self):
-        with open(app.config['DATA_FILE'], mode='w') as f:
-            f.write(json.dumps([], indent=2))
-        with open(app.config['STATS_FILE'], mode='w') as f:
-            f.write(json.dumps([], indent=2))
+        with open(app.config['DATA_FILE'], mode='w') as file:
+            file.write(json.dumps([], indent=2))
+        with open(app.config['STATS_FILE'], mode='w') as file:
+            file.write(json.dumps([], indent=2))

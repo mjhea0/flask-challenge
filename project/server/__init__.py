@@ -21,16 +21,16 @@ app.register_blueprint(api_blueprint)
 @app.errorhandler(400)
 def not_found(error):
     return make_response(jsonify(
-        { 'status': '400', 'error': 'Not found' } ), 400)
+        {'status': '400', 'error': 'Not found'}), 400)
 
 
 @app.errorhandler(404)
 def page_not_found(error):
     return make_response(jsonify(
-        { 'status': '404', 'error': 'Not Found' } ), 404)
+        {'status': '404', 'error': 'Not Found'}), 404)
 
 
 @app.errorhandler(500)
-def page_not_found(error):
+def internal_server(error):
     return make_response(jsonify(
-        { 'status': '500', 'error': 'Something went wrong' } ), 500)
+        {'status': '500', 'error': 'Something went wrong'}), 500)

@@ -14,6 +14,7 @@ schema = [
     'path_results'
 ]
 
+
 def validate(data):
     keys = []
     for key, value in data.items():

@@ -9,12 +9,12 @@ import uuid
 import pandas as pd
 
 
-basedir = os.path.abspath(os.path.dirname(__file__))
-IN_FILE = os.path.join(basedir, 'challenge', 'data', 'sample.json')
-DATA_FILE_DEV = os.path.join(basedir, 'project', 'server', 'data_dev.json')
-STATS_FILE_DEV = os.path.join(basedir, 'project', 'server', 'stats_dev.json')
-DATA_FILE_TEST = os.path.join(basedir, 'project', 'server', 'data_test.json')
-STATS_FILE_TEST = os.path.join(basedir, 'project', 'server', 'stats_test.json')
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+IN_FILE = os.path.join(BASE_DIR, 'challenge', 'data', 'sample.json')
+DATA_FILE_DEV = os.path.join(BASE_DIR, 'project', 'server', 'data_dev.json')
+STATS_FILE_DEV = os.path.join(BASE_DIR, 'project', 'server', 'stats_dev.json')
+DATA_FILE_TEST = os.path.join(BASE_DIR, 'project', 'server', 'data_test.json')
+STATS_FILE_TEST = os.path.join(BASE_DIR, 'project', 'server', 'stats_test.json')
 
 
 SCHEMA = [
@@ -34,10 +34,11 @@ SCHEMA = [
 
 def get_data():
     data = []
-    with open(IN_FILE) as f:
-        for line in f:
+    with open(IN_FILE) as file:
+        for line in file:
             data.append(json.loads(line))
     return data
+
 
 def validate_data(json_data):
     keys = []
@@ -45,14 +46,16 @@ def validate_data(json_data):
         keys.append(key)
     return set(keys) == set(SCHEMA)
 
+
 def write_data(data, file_name):
     with open(file_name, mode='w') as f:
         f.write(json.dumps(data, indent=2))
 
+
 def create_data_frame(data):
     container = []
-    for row in data:
-        for key, value in row.items():
+    for single_row in data:
+        for key, value in single_row.items():
             if key == 'events':
                 for obj in value:
                     container.append(obj)
@@ -62,6 +65,7 @@ def create_data_frame(data):
         'name': 'event_duration',
         'stats': df['event_duration'].describe().to_dict()
     }]
+
 
 def create_uuid():
     string = (base64.urlsafe_b64encode(uuid.uuid4().bytes)).decode('utf-8')

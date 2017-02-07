@@ -4,14 +4,13 @@
 import os
 import json
 import unittest
-import pandas as pd
 
 from base import BaseTestCase
 
 from project.server import app
 
-basedir = os.path.abspath(os.path.dirname(__file__))
-SAMPLE_DATA = os.path.join(basedir, 'sample.json')
+BASE_DIR = os.path.abspath(os.path.dirname(__file__))
+SAMPLE_DATA = os.path.join(BASE_DIR, 'sample.json')
 
 
 class TestAPIBlueprint(BaseTestCase):
@@ -51,10 +50,10 @@ class TestAPIBlueprint(BaseTestCase):
 
     def test_ensure_valid_payload(self):
         """Ensure valid payload."""
-        with open(SAMPLE_DATA) as f:
+        with open(SAMPLE_DATA) as file:
             resp = self.client.post(
                 '/api/v1/stats',
-                data=json.dumps(json.load(f)),
+                data=json.dumps(json.load(file)),
                 content_type='application/json'
             )
             self.assertEquals(resp.status_code, 200)
@@ -66,16 +65,16 @@ class TestAPIBlueprint(BaseTestCase):
 
     def test_ensure_more_than_one_row(self):
         """Ensure file conatins more than one row."""
-        with open(SAMPLE_DATA) as f:
+        with open(SAMPLE_DATA) as file:
             self.client.post(
                 '/api/v1/stats',
-                data=json.dumps(json.load(f)),
+                data=json.dumps(json.load(file)),
                 content_type='application/json'
             )
-        with open(SAMPLE_DATA) as f:
+        with open(SAMPLE_DATA) as file:
             resp = self.client.post(
                 '/api/v1/stats',
-                data=json.dumps(json.load(f)),
+                data=json.dumps(json.load(file)),
                 content_type='application/json'
             )
             self.assertEquals(resp.status_code, 200)
@@ -101,12 +100,12 @@ class TestAPIBlueprint(BaseTestCase):
         self.assertEquals(resp.json['status'], '200')
         self.assertEquals(resp.json['data'], None)
 
-    def test_ensure_single_stat_is_not_none(self):
+    def test_ensure_single_stat(self):
         """Ensure single stat is not none."""
-        with open(SAMPLE_DATA) as f:
+        with open(SAMPLE_DATA) as file:
             self.client.post(
                 '/api/v1/stats',
-                data=json.dumps(json.load(f)),
+                data=json.dumps(json.load(file)),
                 content_type='application/json'
             )
         with open(app.config['STATS_FILE']) as file:

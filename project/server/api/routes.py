@@ -1,8 +1,6 @@
 # project/server/api/routes.py
 
 
-import json
-
 from flask import Blueprint, request, jsonify, abort
 
 from .utils import validate_json, validate_schema, write_data, get_stats, \
@@ -16,7 +14,7 @@ api_blueprint = Blueprint('api', __name__,)
 @api_blueprint.route('/api/v1/ping', methods=['GET'])
 def ping():
     return jsonify(
-        { 'status': '200', 'data': 'pong!' })
+        {'status': '200', 'data': 'pong!'})
 
 
 @api_blueprint.route('/api/v1/stats', methods=['GET'])
@@ -26,7 +24,7 @@ def get_all_stats():
     except:
         abort(500)
     return jsonify(
-        { 'status': '200', 'data': stats })
+        {'status': '200', 'data': stats})
 
 
 @api_blueprint.route('/api/v1/stats/<uuid>', methods=['GET'])
@@ -36,7 +34,7 @@ def get_single_stat(uuid):
     except:
         abort(500)
     return jsonify(
-        { 'status': '200', 'data': stats })
+        {'status': '200', 'data': stats})
 
 
 @api_blueprint.route('/api/v1/stats', methods=['POST'])
@@ -49,4 +47,4 @@ def add_data():
     except:
         abort(500)
     return jsonify(
-        { 'status': '200', 'data': 'Data added' })
+        {'status': '200', 'data': 'Data added'})
