@@ -40,7 +40,7 @@ $ python manage.py runserver
 | Endpoint             | Method | Payload                   | Action          |
 |----------------------|--------|---------------------------|-----------------|
 | /api/v1/stats        | GET    | n/a                       | GET all stats   |
-| /api/v1/stats/<uuid> | GET    | n/a                       | GET single stat |
+| /api/v1/stats/:uuid  | GET    | n/a                       | GET single stat |
 | /api/v1/stats        | POST   | [view](project/tests/sample.json) | Add data        |
 
 ### Test
