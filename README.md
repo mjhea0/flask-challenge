@@ -58,3 +58,7 @@ With coverage:
 ```sh
 $ python manage.py cov
 ```
+
+### Client
+
+Want to test from the client side? With the serving running, open a new terminal tab and run an HTTP server in "project/client".

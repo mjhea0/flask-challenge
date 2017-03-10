@@ -20,6 +20,14 @@ from project.server.api.routes import api_blueprint
 app.register_blueprint(api_blueprint)
 
 
+@app.after_request
+def after_request(response):
+    response.headers.add('Access-Control-Allow-Origin', '*')
+    response.headers.add('Access-Control-Allow-Headers', 'Content-Type')
+    response.headers.add('Access-Control-Allow-Methods', 'GET,PUT,POST')
+    return response
+
+
 @app.errorhandler(400)
 def not_found(error):
     return make_response(jsonify({

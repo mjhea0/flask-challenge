@@ -33,7 +33,6 @@ def validate_schema(f):
 
 
 def write_data(data):
-    # print(data)
     with open(app.config['DATA_FILE']) as f:
         current = json.load(f)
     current.append(data)
