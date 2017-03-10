@@ -1,6 +1,27 @@
 # seed.py
 
 
+"""
+1. get_data() - get sample data from sample.json, convert to dict
+2. iterate through data, validating schema with validate_data()
+3. create_data_frame() - pass 'event' data to pandas' df, and then
+   output aggregates:
+    {
+        name: "event_duration",
+        stats: {
+            25%: 0,
+            50%: 7,
+            75%: 40,
+            count: 61941,
+            max: 12483,
+            mean: 35.75387869101242,
+            min: 0,
+            std: 102.418981650863
+        },
+    }
+"""
+
+
 import os
 import base64
 import json
@@ -78,6 +99,8 @@ if __name__ == '__main__':
     for row in all_data:
         if validate_data(row):
             current.append(row)
+        else:
+            print('invalid')
     stats = create_data_frame(current)
     write_data(stats, STATS_FILE_DEV)
     write_data(current, DATA_FILE_DEV)
