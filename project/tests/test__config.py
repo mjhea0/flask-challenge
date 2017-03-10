@@ -1,4 +1,4 @@
-# project/server/tests/test_config.py
+# project/server/tests/integration/test_config.py
 
 
 import unittest

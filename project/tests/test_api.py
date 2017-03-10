@@ -1,4 +1,4 @@
-# project/server/tests/test_api.py
+# project/server/tests/integration/test_api.py
 
 
 import os

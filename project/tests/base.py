@@ -1,4 +1,4 @@
-# project/server/tests/base.py
+# project/server/tests/integration/base.py
 
 
 import json
