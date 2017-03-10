@@ -7,7 +7,7 @@ __pycache__
 *.coverage
 .DS_Store
 env.sh
-challenge
+migrations
 data_dev.json
 data_test.json
 stats_dev.json
