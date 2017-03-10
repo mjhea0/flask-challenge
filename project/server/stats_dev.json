@@ -1,0 +1,296 @@
+[
+  {
+    "uuid": "ZlwIqSdnTg6owjlIkP90QQ",
+    "name": "event_duration",
+    "stats": {
+      "count": 61941.0,
+      "mean": 35.75387869101242,
+      "std": 102.418981650863,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 7.0,
+      "75%": 40.0,
+      "max": 12483.0
+    }
+  },
+  {
+    "uuid": "vCq53yjkReGsTDoHfBXTkA",
+    "name": "event_duration",
+    "stats": {
+      "count": 8.0,
+      "mean": 36.875,
+      "std": 42.773281045865204,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "o2kqVt6kQEurLCcqyumy4w",
+    "name": "event_duration",
+    "stats": {
+      "count": 16.0,
+      "mean": 36.875,
+      "std": 41.32291535375176,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "8cfZTIPrSNisfePNj0VP6Q",
+    "name": "event_duration",
+    "stats": {
+      "count": 24.0,
+      "mean": 36.875,
+      "std": 40.87128523207631,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "buqA3-YGSpGeql2BQTNKgA",
+    "name": "event_duration",
+    "stats": {
+      "count": 32.0,
+      "mean": 36.875,
+      "std": 40.65095324835569,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "72EaCLSySJ63TkL4WJVEkw",
+    "name": "event_duration",
+    "stats": {
+      "count": 40.0,
+      "mean": 36.875,
+      "std": 40.5204522591006,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "wxfNUl0TRFOs2fMHI09kfg",
+    "name": "event_duration",
+    "stats": {
+      "count": 48.0,
+      "mean": 36.875,
+      "std": 40.434146618495085,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "c0U2hTj1QZGVg1wcRe2uNw",
+    "name": "event_duration",
+    "stats": {
+      "count": 56.0,
+      "mean": 36.875,
+      "std": 40.372836277513485,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "V_Z1QIHHQEqFg2u2tWQJFg",
+    "name": "event_duration",
+    "stats": {
+      "count": 64.0,
+      "mean": 36.875,
+      "std": 40.32703610817241,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "MTKcKULxTNOQRdBoSS-h2g",
+    "name": "event_duration",
+    "stats": {
+      "count": 72.0,
+      "mean": 36.875,
+      "std": 40.29152131827297,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "fUr19k6HRxSqA_B3QEq4Fg",
+    "name": "event_duration",
+    "stats": {
+      "count": 80.0,
+      "mean": 36.875,
+      "std": 40.26317694521284,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "ME1asmP-SOOviZ5BFSRunA",
+    "name": "event_duration",
+    "stats": {
+      "count": 88.0,
+      "mean": 36.875,
+      "std": 40.24003053516814,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "8X188JkNQMC1KAIsHrpZzQ",
+    "name": "event_duration",
+    "stats": {
+      "count": 96.0,
+      "mean": 36.875,
+      "std": 40.22077232371091,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "k_XHjZNjT0yQJ1EPSJPrNw",
+    "name": "event_duration",
+    "stats": {
+      "count": 104.0,
+      "mean": 36.875,
+      "std": 40.20449849244642,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "xtFyEhhISVm4zqRGUMcjVg",
+    "name": "event_duration",
+    "stats": {
+      "count": 112.0,
+      "mean": 36.875,
+      "std": 40.19056520542516,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "moHmjBqsR2qVRsp2nZ2jbg",
+    "name": "event_duration",
+    "stats": {
+      "count": 120.0,
+      "mean": 36.875,
+      "std": 40.178501400499194,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "dbBAAH6aSUCWaGvpjxs4Ew",
+    "name": "event_duration",
+    "stats": {
+      "count": 128.0,
+      "mean": 36.875,
+      "std": 40.167954477781585,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "f0Cn-6j_Rl20hIgbNXr-dA",
+    "name": "event_duration",
+    "stats": {
+      "count": 136.0,
+      "mean": 36.875,
+      "std": 40.15865526374847,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "mGztgP9LQNaGDze3SE3mwg",
+    "name": "event_duration",
+    "stats": {
+      "count": 144.0,
+      "mean": 36.875,
+      "std": 40.15039471542211,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "81EL2gNRSiiy03K9b7Y16w",
+    "name": "event_duration",
+    "stats": {
+      "count": 152.0,
+      "mean": 36.875,
+      "std": 40.14300801777605,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  },
+  {
+    "uuid": "fgWNmZCUT3CQuTQZl-VcIg",
+    "name": "event_duration",
+    "stats": {
+      "count": 160.0,
+      "mean": 36.875,
+      "std": 40.136363474485016,
+      "min": 0.0,
+      "25%": 0.0,
+      "50%": 19.0,
+      "75%": 75.75,
+      "max": 100.0
+    }
+  }
+]

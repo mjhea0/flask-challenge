@@ -9,7 +9,3 @@ htmlcov
 .DS_Store
 env.sh
 migrations
-data_dev.json
-data_test.json
-stats_dev.json
-stats_test.json
