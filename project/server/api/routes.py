@@ -41,8 +41,8 @@ def get_single_stat(uuid):
 def add_data():
     try:
         write_data(request.json)
-        update_stats()
+        uuid = update_stats()
     except:
         abort(500)
     return jsonify(
-        {'status': '200', 'data': 'Data added'})
+        {'status': '200', 'data': {'status': 'success', 'uuid': uuid}})

@@ -59,7 +59,7 @@ class TestAPIBlueprint(BaseTestCase):
             self.assertEquals(resp.status_code, 200)
             self.assertEquals(resp.headers['Content-Type'], 'application/json')
             self.assertEquals(resp.json['status'], '200')
-            self.assertEquals(resp.json['data'], 'Data added')
+            self.assertEquals(resp.json['data']['status'], 'success')
             with open(app.config['DATA_FILE']) as file:
                 self.assertEquals(len(json.load(file)), 1)
 
@@ -80,7 +80,7 @@ class TestAPIBlueprint(BaseTestCase):
             self.assertEquals(resp.status_code, 200)
             self.assertEquals(resp.headers['Content-Type'], 'application/json')
             self.assertEquals(resp.json['status'], '200')
-            self.assertEquals(resp.json['data'], 'Data added')
+            self.assertEquals(resp.json['data']['status'], 'success')
             with open(app.config['DATA_FILE']) as file:
                 self.assertEquals(len(json.load(file)), 2)
 

@@ -49,8 +49,9 @@ def update_stats():
                     for obj in value:
                         container.append(obj)
         df = pd.DataFrame(container)
+        uuid = create_uuid()
         data = {
-            'uuid': create_uuid(),
+            'uuid': uuid,
             'name': 'event_duration',
             'stats': df['event_duration'].describe().to_dict()
         }
@@ -59,7 +60,8 @@ def update_stats():
     current.append(data)
     with open(app.config['STATS_FILE'], mode='w') as f:
         f.write(json.dumps(current, indent=2))
-
+    return uuid
+    
 
 def get_stats(uuid):
     with open(app.config['STATS_FILE']) as f:
