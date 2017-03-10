@@ -28,7 +28,7 @@ To run the code, follow the instructions in the "README.md" file from the repo. 
 
 1. Add mongo to better handle data aggregations
 1. Add more aggregations
-1. Add more tests - right now payload can only handle a single JSON object, not an array like the sample
+1. Add more tests - right now payload can only handle a single JSON object, not multiple objects like the sample
 1. Add more `try/except`s, better error handling
 1. Increase code coverage
 1. Add task queue - so users can upload large files without having to wait, results are emailed

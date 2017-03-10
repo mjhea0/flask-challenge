@@ -5,6 +5,7 @@ __pycache__
 *.pyc
 *.sqlite
 *.coverage
+htmlcov
 .DS_Store
 env.sh
 migrations
