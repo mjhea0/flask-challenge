@@ -43,7 +43,7 @@ $ python manage.py runserver
 | /api/v1/ping         | GET    | n/a                       | Sanity check    |
 | /api/v1/stats        | GET    | n/a                       | GET all stats   |
 | /api/v1/stats/:uuid  | GET    | n/a                       | GET single stat |
-| /api/v1/stats        | POST   | [view](project/tests/sample.json) | Add data        |
+| /api/v1/stats        | POST  | [view](project/tests/sample.json) | Add data |
 
 ### Test
 
